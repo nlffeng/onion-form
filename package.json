@@ -1,0 +1,65 @@
+{
+  "name": "onion-form",
+  "version": "1.0.0",
+  "description": "洋葱表单",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "移动端",
+    "跨端"
+  ],
+  "engines": {
+    "npm": ">=5.0.0"
+  },
+  "scripts": {
+    "build:lib": "tsc --outDir lib --module commonjs && npm run copy:lib",
+    "build:es": "tsc --outDir es && npm run copy:es",
+    "build": "npm run build:lib && npm run build:es",
+    "copy:lib": "copyfiles -u 1 './src/**/*.less' ./lib",
+    "copy:es": "copyfiles -u 1 './src/**/*.less' ./es",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
+    "lint": "npm run eslint && npm run stylelint",
+    "prebuild": "npm run lint && rimraf lib && rimraf es"
+  },
+  "author": "WhiteFon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nlffeng/onion-form"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "mervjs": "^1.1.2",
+    "white-react-use": "^2.5.0",
+    "@tarojs/components": "~3.4.0",
+    "@tarojs/react": "~3.4.0",
+    "@tarojs/runtime": "~3.4.0",
+    "@tarojs/taro": "~3.4.0",
+    "@tarojs/shared": "~3.4.0",
+    "@tarojs/router": "~3.4.0",
+    "@tarojs/api": "~3.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.24.0",
+    "react": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "typescript": "^4.3.5"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,73 @@
+@familyColor: #FAB32A;
+@dangerColor: #F24530;
+@warningColor: #FAB32A;
+@warningColor: #FAB32A;
+@successColor: #4DBDC8;
+@successColor: #4DBDC8;
+@importantColor: #5288F5;
+@strongColor: #666666;
+@weakColor: #999999;
+
+.m-onion-form-item {
+  margin-top: 32rpx;
+  padding: 0rpx 32rpx;
+  box-sizing: content-box;
+
+  &-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.labelBlock {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-label {
+      font-size: 28rpx;
+      font-weight: 500;
+      color: #000;
+      line-height: 40rpx;
+
+      &-required {
+        color: #F24530;
+      }
+
+      &-help {
+        color: @weakColor;
+      }
+    }
+
+    &-tips {
+      margin-top: 12rpx;
+      font-size: 24rpx;
+      color: #999999;
+      line-height: 34rpx;
+    }
+
+    &-desc {
+      margin-top: 24rpx;
+      font-size: 28rpx;
+      color: #999;
+      line-height: 40rpx;
+    }
+  }
+
+  &-error {
+    margin-top: 8rpx;
+    color: @dangerColor;
+    font-size: 28rpx;
+  }
+
+  .m-t-8 {
+    margin-top: 8rpx;
+  }
+
+  .m-b-8 {
+    margin-bottom: 8rpx;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+}
