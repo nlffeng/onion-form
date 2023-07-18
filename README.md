@@ -797,9 +797,9 @@ OnionForm 内置注册的组件
 | pageContainer | 非表单物料 | 外层容器组件，没有什么属性，目前就是单纯的在最外层 | - |
 | submitButton | 非表单物料 | 提交按钮组件，内部监听了这个组件的 click 事件做了一些 require 校验逻辑，如果 schema 中没有定义 type 为 submitButton 的元素，则这个内部校验不会有效 | SubmitButtonProps |
 | formItem | 表单包装物料 | 该组件包装了表单组件，实现了布局、提示、高亮等功能 |  |
-| input | 表单物料 | 输入框组件 | [查看 Input 组件属性](http://ironm.cfuture.shop/mobile-design/components/input) |
-| textarea | 表单物料 | 输入域组件 | [查看 Textarea 组件属性](http://ironm.cfuture.shop/mobile-design/components/text-area) |
-| radioGroup | 表单物料 | 单选组组件 | [查看 RadioGroup 组件属性](http://ironm.cfuture.shop/mobile-design/components/radio-group) |
+| input | 表单物料 | 输入框组件 | [查看 Input 组件属性](https://taro-docs.jd.com/docs/components/forms/input) |
+| textarea | 表单物料 | 输入域组件 | [查看 Textarea 组件属性](https://taro-docs.jd.com/docs/components/forms/textarea) |
+| radioGroup | 表单物料 | 单选组组件 | [查看 RadioGroup 组件属性](https://taro-docs.jd.com/docs/components/forms/radio-group) |
 
 ##### SubmitButtonProps
 
