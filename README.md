@@ -332,7 +332,7 @@ export default Home
           "required": true
         },
         // 联动必填设置
-        "linkageShowHide": [
+        "linkageRequired": [
           // 当输入值为 c 时，必填 input-1002 元素
           {
             "targetElements": ["input-1002"],
