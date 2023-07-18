@@ -664,7 +664,7 @@ elements 对象的每个 键值value 是一个对象（记为 b），b 对象属
 
 ##### formProps
 
-> formProps 为内置的表单项组件 [FormItem 属性](http://ironm.cfuture.shop/mobile-design/components/form-item)
+> formProps 为内置的表单项组件 FormItem 属性
 除了这些 FormItem 属性外，另外增加了禁用的属性，如下
 
 | 属性 | 必填 | 说明 | 类型 |
